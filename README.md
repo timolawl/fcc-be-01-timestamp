@@ -1,9 +1,9 @@
 # Timestamp Microservice
 
+A full-stack JavaScript application as part of the [Free Code Camp](https://freecodecamp.com "Free Code Camp") curriculum. API Basejump #1 - Timestamp Microservice.
+
 Check out the working app here: [https://timolawl-timestamp.herokuapp.com](https://timolawl-timestamp.herokuapp.com "Timestamp Microservice").
 
-## Overview:
-A full-stack JavaScript application as part of the [Free Code Camp](https://freecodecamp.com "Free Code Camp") curriculum. API Basejump #1 - Timestamp Microservice.
 
 #### User stories:
 1. I can pass a string as a parameter, and it will check to see whether that string contains either a Unix timestamp or a natural language date (e.g., January 1, 2016).
