@@ -16,6 +16,6 @@ Check out the working app here: [https://timolawl-timestamp.herokuapp.com](https
 * Any other input: [https://timolawl-timestamp.herokuapp.com/foobar](https://timolawl-timestamp.herokuapp.com/foobar)
 
 ##### Example output:
-* { "unix": 1451635200, "natural": "January 1, 2016" }
+* { "unix": 1451606400, "natural": "January 1, 2016" }
 * { "unix": 1450137600, "natural": "December 15, 2015" }
 * { "unix": null, "natural: null }
