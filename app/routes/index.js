@@ -12,7 +12,7 @@ function parseUnix(unix) {
 module.exports = function(app) {
     app.route('/')
         .get(function(req, res) {
-            res.sendFile(__dirname + '/index');
+            res.sendFile(process.cwd() + '/public/index.html');
         });
 
     app.get(/^\/\d{1,10}$/, function(req, res) {
@@ -34,9 +34,7 @@ module.exports = function(app) {
         res.json({ unix: unixDate, natural: naturalDate });
     });
 
-
     app.use(function(req, res) {
         res.json({ unix: null, natural: null });
     });
-
 };

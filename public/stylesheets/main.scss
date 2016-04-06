@@ -1,16 +1,86 @@
+
 /* main.scss */
-/* scss file for timestamp microservice */
 /* https://timolawl-timestamp.herokuapp.com */
+
+$primary-color: #c4273c;
+$secondary-color: #375d81; // #087891;
+
+@mixin title($font-size: 1.4rem, $margin-bottom: 0.25rem) {
+  font-weight: bold;
+  font-size: $font-size;
+  margin-bottom: $margin-bottom;
+}
 
 *, :before, :after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Roboto;
+}
+
+ul, ol {
+  list-style-position: inside;
+}
+
+a {
+  &:link {
+    color: $secondary-color;
+  }
+  &:visited {
+    color: $secondary-color;
+  }
+  &:hover {
+    color: $primary-color;
+  }
+  &:active {
+    color: $primary-color;
+  }
 }
 
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background: url(/public/images/timestamp.svg) no-repeat center;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1;
+  }
 }
 
+.timestamp {
+  &--title {
+    color: $primary-color;
+    @include title(2rem, 1rem);
+  }
+  &__userstories {
+    &--title {
+      @include title();
+    }
+  }
+  &__exampleusage {
+    &--title {
+      @include title();
+      margin-top: 1rem;
+    }
+  }
+
+  &__exampleoutput {
+    &--title {
+      @include title();
+      margin-top: 1rem;
+    }
+  }
+}
+
+.footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}

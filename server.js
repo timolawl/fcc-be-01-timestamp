@@ -8,8 +8,8 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(__dirname + '/public'));
-app.use(favicon(__dirname + '/public/images/favicon.ico'));
+app.use('/public', express.static(process.cwd() + '/public'));
+app.use(favicon(process.cwd() + '/public/images/favicon.ico'));
 
 routes(app);
 

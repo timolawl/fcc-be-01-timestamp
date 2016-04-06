@@ -1,12 +1,67 @@
 /* main.scss */
-/* scss file for timestamp microservice */
 /* https://timolawl-timestamp.herokuapp.com */
 *, :before, :after {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: Roboto; }
+
+ul, ol {
+  list-style-position: inside; }
+
+a:link {
+  color: #375d81; }
+
+a:visited {
+  color: #375d81; }
+
+a:hover {
+  color: #c4273c; }
+
+a:active {
+  color: #c4273c; }
 
 .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .wrapper:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(/public/images/timestamp.svg) no-repeat center;
+    background-size: contain;
+    opacity: 0.1;
+    z-index: -1; }
+
+.timestamp--title {
+  color: #c4273c;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem; }
+
+.timestamp__userstories--title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem; }
+
+.timestamp__exampleusage--title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+  margin-top: 1rem; }
+
+.timestamp__exampleoutput--title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+  margin-top: 1rem; }
+
+.footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem; }
