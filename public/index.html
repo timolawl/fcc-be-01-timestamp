@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timestamp Microservice</title>
+        <link href='/public/stylesheets/main.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class='timestamp--logo'>
+            <img src='/public/img/asdf.png' />
+        </div>
+        <div class='timestamp--title'>Timestamp Microservice</div>
+
+        <div class='timestamp__userstories'>
+            <div class='timestamp__userstories--title'>User Stories:</div>
+            <div class='timestamp__userstories--stories'>
+                <ol>
+                    <li>I can pass a string as a parameter, and it will check to see whether that string contains either a Unix timestamp or a natural language date (e.g., January 1, 2016)</li>
+                    <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+                    <li>If it does not contain a date or Unix timestamp, it returns null for those properties.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class='timestamp__exampleusage'>
+            <div class='timestamp__exampleusage--title'>Example Usage:</div>
+            <div class='timestamp__exampleusage--examples'>
+                <ul>
+                    <li><a href='https://timolawl-timestamp.herokuapp.com/January 1, 2016'>https://timolawl-timestamp.herokuapp.com/January 1, 2016</a></li>
+                    <li><a href='https://timolawl-timestamp.herokuapp.com/1451635200'>https://timolawl-timestamp.herokuapp.com/1451635200</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='timestamp__exampleoutput'>
+            <div class='timestamp__exampleoutput--title'>Example Output:</div>
+            <div class='timestamp__exampleoutput--examples'>
+                <ul>
+                    <li>{ "unix": 1451635200, "natural": "January 1, 2016" }</li>
+                    <li>{ "unix": null, "natural": null }</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='footer'>
+            By <a href='https://timolawl.github.io'>Timolawl</a> |
+            <a href='https://twitter.com/timolawl'>Twitter</a> |
+            <a href='https://github.com/timolawl'>GitHub</a> |
+            <a href='https://codepen.io/timolawl'>Codepen</a> |
+            <a href='https://freecodecamp.com/timolawl'>Free Code Camp</a>
+        </div>
+
+    </body>
+</html>

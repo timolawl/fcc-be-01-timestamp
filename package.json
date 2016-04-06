@@ -1,0 +1,30 @@
+{
+  "name": "timolawl-timestamp",
+  "version": "1.0.0",
+  "description": "Timestamp microservice, a Free Code Camp full-stack app.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/timolawl/fcc-timestamp.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "javascript",
+    "freecodecamp",
+    "timestamp"
+  ],
+  "author": "Tim Chiang <timolawl@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timolawl/fcc-timestamp/issues"
+  },
+  "homepage": "https://github.com/timolawl/fcc-timestamp#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
