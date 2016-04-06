@@ -27,5 +27,9 @@
   "dependencies": {
     "express": "^4.13.4",
     "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0"
   }
 }
